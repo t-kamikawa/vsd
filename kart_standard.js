@@ -191,7 +191,6 @@ function Draw(){
 	);
 	
 	// ラップタイム
-	//Vsd.DrawLapTime( Vsd.Width - 1, 0, ALIGN_TOP | ALIGN_RIGHT, FontM_Outline );
 	Vsd.DrawLapTime( Vsd.Width - 1, 0, ALIGN_TOP | ALIGN_RIGHT, FontM_Outline);
 	
 	// グラフ
