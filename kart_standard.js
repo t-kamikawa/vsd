@@ -9,6 +9,7 @@
 //
 //  更新履歴
 //		2018.03.21	1.0		新規作成
+//		2024.05.07	1.1		動画サイズを変更しても対応できるようにLapNoの表示位置を変更	
 
 //*** 初期化処理 ************************************************************
 
@@ -184,7 +185,7 @@ function Draw(){
 	
 	// 走行軌跡
 	Vsd.DrawMap(
-		8 * Scale, 8 * Scale, 500 * Scale, 300 * Scale,
+		10 * Scale, 0 * Scale, 400 * Scale, 300 * Scale,
 		ALIGN_TOP | ALIGN_LEFT,
 		3 * Scale, 6 * Scale, 0xFF0000, 0xFFFF00, 0x00FF00, 0xFF0000,
 		Vsd.Config_map_length
@@ -203,5 +204,6 @@ function Draw(){
 	else
 		BufStr ="Finish";
 
-	Vsd.DrawTextAlign(Vsd.Width - 180, 280, ALIGN_LEFT | ALIGN_VCENTER, BufStr ,FontM_Outline);
+	//Vsd.DrawTextAlign(Vsd.Width / 5 , 280, ALIGN_LEFT | ALIGN_VCENTER, BufStr ,FontM_Outline);
+	Vsd.DrawTextAlign(Vsd.Width - 316 , Vsd.Height - 700,  ALIGN_LEFT | ALIGN_VCENTER, BufStr ,FontM_Outline);
 }
